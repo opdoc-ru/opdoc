@@ -1,0 +1,52 @@
+{
+  "name": "opdoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "navigo": "^7.1.2",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "node-notifier": "latest"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "resources"
+      ],
+      "extensions": "js,scss"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o ./web ./resources/style.scss",
+    "copy-images": "cp -r ./resources/images/ ./web/images/",
+    "watch": "npm-watch",
+    "build": "webpack --mode=production & npm run build-css & npm run copy-images & nodejs ./watch-notify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opdoc-ru/opdoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opdoc-ru/opdoc/issues"
+  },
+  "homepage": "https://github.com/opdoc-ru/opdoc#readme"
+}

@@ -1,0 +1,13 @@
+{
+    "require": {
+        "bramus/router": "~1.4",
+        "philo/laravel-blade": "^3.1",
+        "symfony/yaml": "^4.2",
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    }
+}

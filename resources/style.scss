@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400i,700,700i&amp;subset=cyrillic');
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  .navbar-opdoc {
+    color: #fff;
+
+    .nav-link {
+      font-size: 14px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: #2c5f56;
+      width: 100px;
+      text-align: center;
+    }
+  }
+
+  .jumbotron {
+    background: #c21825;
+    margin-bottom: 10px;
+    background: url(./images/bg3.jpg);
+    background-position: left center;
+    background-size: 100% auto;
+    padding: 25px 0;
+    margin-bottom: 15px;
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-family: Lobster;
+    }
+  }
+
+  .page-subtitle {
+    font-size: 30px;
+  }
+
+  pre.code {
+    background: #fff;
+  }
+
+  ol.breadcrumb {
+    .btn.btn-warning {
+      background: #ed9c28;
+      border-color: #eea236;
+    }
+
+    li.breadcrumb-item {
+      line-height: 30px;
+    }
+  }
+}

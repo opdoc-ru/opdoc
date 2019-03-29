@@ -1,0 +1,13 @@
+.articles-list {
+  h3.title {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 14px;
+
+    &:last-of-type {
+      margin-bottom: 5px;
+    }
+  }
+}
