@@ -2,9 +2,7 @@
 
 namespace src\dto;
 
-class FolderDto extends BaseDto
+class FolderDto extends ReferenceDto
 {
-    public $name;
-
-    public $description;
+    public $icon = 'folder';
 }

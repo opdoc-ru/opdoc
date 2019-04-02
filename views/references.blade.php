@@ -21,8 +21,8 @@
             <tbody>
                 @foreach ($references as $reference)
                 <tr style="background: #eee;">
-                    <td><img src="/images/folder.png" align="middle" style="margin-right: 10px;"></td>
-                    <td><a href="/reference/index/id-1/"><i>Admin</i></a></td>
+                    <td><img src="/images/reference_icons/{{ $reference->icon }}.png" align="middle" style="margin-right: 10px;"></td>
+                    <td><a href="{{ $reference->url() }}"><i>{{ $reference->name }}</i></a></td>
                     <td>Содержит MVCL-файлы для админцентра</td>
                 </tr>
                 @endforeach

@@ -2,9 +2,9 @@
 
 namespace src\dto;
 
-class ClassDto
+class ClassDto extends ReferenceDto
 {
-    public $className;
+    public $icon = 'class';
 
     public $properties;
 

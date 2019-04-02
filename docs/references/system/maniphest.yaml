@@ -1,3 +1,4 @@
 dto: FolderDto
 name: System
+path: /system/
 description: Системные классы opencart. Представляют собой ядро CMS

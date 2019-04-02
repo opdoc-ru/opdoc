@@ -36,7 +36,12 @@ $router->match('GET', 'articles/{slug}', function($slug) use ($view) {
 });
 
 
-$router->match('GET', 'references((/[a-z]+)*)', function($path) use ($view) {
+$router->match('GET', 'references((/[a-z]+)*)', function($path, $end) use ($view) {
+
+    /**
+     * Regex group won't parse whole path
+     */
+    $path = $path . '/' . $end;
 
     echo $view->view()->make('references', [
         'references' => App::references($path ?? ''),

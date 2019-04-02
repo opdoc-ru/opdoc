@@ -1,5 +1,5 @@
 dto: ClassDto
-className: Registry
+name: Registry
 path: system/engine/
 properties:
   - properties/data/maniphest.yaml
@@ -8,3 +8,5 @@ methods:
   - methods/get/maniphest.yaml
   - methods/set/maniphest.yaml
   - methods/has/maniphest.yaml
+
+description: Test description :)
